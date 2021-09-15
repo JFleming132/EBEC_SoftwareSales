@@ -33,27 +33,33 @@ def main():
     price = 79.0 #baseline price, given by assignment
 
     if packages >= 0: #Is it a positive number?
+
         if packages <= 4: #Are you buying 4 or less packages?
-            print('  No discount applied.')
+            print('  No discount applied.') #full price
+
         elif packages <= 24: #24 or less?
             print ('  10% discount applied.')
-            price = price * .9
+            price = price * .9 #price calculation for 10% off
+
         elif packages <= 49: #49 or less?
             print ('  20% discount applied.')
-            price = price *.8
+            price = price *.8 #price calculation for 20% off
+
         elif packages <= 99: #99 or less?
-            print ('  30% discount applied')
-            price = price * .7
+            print ('  30% discount applied.')
+            price = price * .7 #price calculation for 30% off
+
         else: #more than 99?
-            print ('  45% discount applied')
-            price = price * .55
+            print ('  45% discount applied.')
+            price = price * .55 #price calculation for 45% off
 
         float(packages)
         total = price * packages
-        print(f'  The total price for purchasing {packages:,} packages is ${total:,.2f}.')
+        print(f'  The total price for purchasing {packages:,} packages is ${total:,.2f}.') #formats total to be precise to 2 decimal places and have comma separators
+
 
     else: #negative number?
-        print("  Invalid Input!")
+        print("  Invalid Input!") #elementary error handling
 
 
 
