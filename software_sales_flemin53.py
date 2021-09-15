@@ -39,23 +39,23 @@ def main():
 
         elif packages <= 24: #24 or less?
             print ('  10% discount applied.')
-            price = price * .9 #price calculation for 10% off
+            price = price * .9 #10% off
 
         elif packages <= 49: #49 or less?
             print ('  20% discount applied.')
-            price = price *.8 #price calculation for 20% off
+            price = price *.8 #20% off
 
         elif packages <= 99: #99 or less?
             print ('  30% discount applied.')
-            price = price * .7 #price calculation for 30% off
+            price = price * .7 #30% off
 
         else: #more than 99?
             print ('  45% discount applied.')
-            price = price * .55 #price calculation for 45% off
+            price = price * .55 #45% off
 
         float(packages)
         total = price * packages
-        print(f'  The total price for purchasing {packages:,} packages is ${total:,.2f}.') #formats total
+        print(f'  The total price for purchasing {packages:,} packages is ${total:,.2f}.')
 
     else: #negative number?
         print("  Invalid Input!")
