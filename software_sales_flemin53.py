@@ -29,13 +29,13 @@ Academic Integrity Statement:
 
 def main():
 
-    packages = int(input('How many packages will be purchased: ')) #Collect intended quantity of purchased packages from user
-    price = 79.0 #baseline price, given by assignment
+    packages = int(input('How many packages will be purchased: '))
+    price = 79.0
 
     if packages >= 0: #Is it a positive number?
 
         if packages <= 4: #Are you buying 4 or less packages?
-            print('  No discount applied.') #full price
+            print('  No discount applied.')
 
         elif packages <= 24: #24 or less?
             print ('  10% discount applied.')
@@ -50,12 +50,12 @@ def main():
             price = price * .7 #price calculation for 30% off
 
         else: #more than 99?
-            print ('  45% discount applied.') 
+            print ('  45% discount applied.')
             price = price * .55 #price calculation for 45% off
 
         float(packages)
-        total = price * packages #total price with discount
-        print(f'  The total price for purchasing {packages:,} packages is ${total:,.2f}.') #formats total to be precise to 2 decimal places and have comma separators
+        total = price * packages
+        print(f'  The total price for purchasing {packages:,} packages is ${total:,.2f}.') #formats total
 
     else: #negative number?
         print("  Invalid Input!")
