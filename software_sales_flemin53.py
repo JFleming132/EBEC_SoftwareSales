@@ -1,10 +1,10 @@
 """
-Author: Your Name, login@purdue.edu
-Assignment: m.n - Assignment Name
-Date: MM/DD/YYYY
+Author: Your Name, flemin53@purdue.edu
+Assignment: m.n - Software Sales
+Date: 09/14/2021
 
 Description:
-    Describe your program here.
+Takes an amount of packages input from the user, applies a discount based on the quantity, and determines the price of their order.
 
 Contributors:
     Name, login@purdue.edu [repeat for each]
@@ -53,8 +53,8 @@ def main():
             print ('  45% discount applied.')
             price = price * .55 #price calculation for 45% off
 
-        float(packages)
-        total = price * packages
+        float(packages) #just to make sure that the proceeding calculation does not return a value error
+        total = price * packages #total price with discount
         print(f'  The total price for purchasing {packages:,} packages is ${total:,.2f}.') #formats total to be precise to 2 decimal places and have comma separators
 
 
