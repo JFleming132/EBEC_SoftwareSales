@@ -34,22 +34,22 @@ def main():
 
     if packages >= 0: #Is it a positive number?
 
-        if packages <= 4: #Are you buying 4 or less packages?
+        if packages <= 4: 
             print('  No discount applied.')
 
-        elif packages <= 24: #24 or less?
+        elif packages <= 24:
             print ('  10% discount applied.')
             price = price * .9 #10% off
 
-        elif packages <= 49: #49 or less?
+        elif packages <= 49:
             print ('  20% discount applied.')
             price = price *.8 #20% off
 
-        elif packages <= 99: #99 or less?
+        elif packages <= 99:
             print ('  30% discount applied.')
             price = price * .7 #30% off
 
-        else: #more than 99?
+        else:
             print ('  45% discount applied.')
             price = price * .55 #45% off
 
