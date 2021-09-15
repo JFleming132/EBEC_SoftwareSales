@@ -29,31 +29,31 @@ Academic Integrity Statement:
 
 def main():
 
-    packages = int(input('How many packages will be purchased: '))
-    price = 79.0
+    packages = int(input('How many packages will be purchased: ')) #Collect intended quantity of purchased packages from user
+    price = 79.0 #baseline price, given by assignment
 
-    if packages >= 0:
-        if packages <= 4:
-            print('No Discount Applied.')
-        elif packages <= 24:
-            print ('10% discount applied.')
+    if packages >= 0: #Is it a positive number?
+        if packages <= 4: #Are you buying 4 or less packages?
+            print('  No discount applied.')
+        elif packages <= 24: #24 or less?
+            print ('  10% discount applied.')
             price = price * .9
-        elif packages <= 49:
-            print ('20% discount applied.')
+        elif packages <= 49: #49 or less?
+            print ('  20% discount applied.')
             price = price *.8
-        elif packages <= 99:
-            print ('30% discount applied')
+        elif packages <= 99: #99 or less?
+            print ('  30% discount applied')
             price = price * .7
-        else:
-            print ('45% discount applied')
+        else: #more than 99?
+            print ('  45% discount applied')
             price = price * .55
 
         float(packages)
         total = price * packages
-        print(f'The total price for purchasing {packages:,} packages is ${total:,.2f}.')
+        print(f'  The total price for purchasing {packages:,} packages is ${total:,.2f}.')
 
-    else:
-        print("Invalid Input!")
+    else: #negative number?
+        print("  Invalid Input!")
 
 
 
